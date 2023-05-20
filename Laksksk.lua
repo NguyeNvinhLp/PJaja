@@ -7315,7 +7315,7 @@ end)
 
 Weapon:Seperator(" Auto Tween Mirage ")
 
-Weapon:Toggle("Auto Tween mirage",_G.Auto_Tween_Mirage,function(value)
+Weapon:Toggle("Auto Tween Mirage",_G.Auto_Tween_Mirage,function(value)
 _G.MirageMirage = value
 StopTween(_G.Auto_Tween_Mirage)
 end)

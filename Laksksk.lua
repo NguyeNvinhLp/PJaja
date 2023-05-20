@@ -7316,14 +7316,14 @@ end)
 Weapon:Seperator(" Auto Tween Mirage ")
 
 Weapon:Toggle("Auto Tween Mirage",_G.Auto_Tween_Mirage,function(value)
-_G.MirageMirage = value
+_G.Auto_Tween_Mirage = value
 StopTween(_G.Auto_Tween_Mirage)
 end)
 
 spawn(function()
         pcall(function()
             while wait() do
-             if _G.MirageMirage then
+             if _G.Auto_Tween_Mirage then
               if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
                 function toTargetWait(a)local b=(a.p-game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position).Magnitude;tweenrach=game:GetService('TweenService'):Create(game.Players.LocalPlayer.Character:WaitForChild("HumanoidRootPart"),TweenInfo.new(b/250,Enum.EasingStyle.Linear),{CFrame=a})tweenrach:Play()end;toTargetWait(workspace.Map.MysticIsland.PrimaryPart.CFrame*CFrame.new(0,250,0))
                 else

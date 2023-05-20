@@ -7335,9 +7335,12 @@ game.StarterGui:SetCore("SendNotification", {
         })
                 if _G.MirageHop then
                 wait(6)
-                Hop()
-                end          
-            end
+                      hop()
+					end
+				end
+			end)
+		end
+	end)
 
 		Weapon:Seperator(" Rengoku ")
 
